@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidProject"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ResultOfQuiz"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionThirdQuizApp"
+            android:exported="true" />
+        <activity
+            android:name=".QuestionSecondQuizApp"
+            android:exported="true" />
+        <activity
+            android:name=".EnterPhoneNumber"
+            android:exported="true" />
+        <activity
+            android:name=".VerifyOtp"
+            android:exported="true" />
+        <activity
+            android:name=".CameraCapture"
+            android:exported="true" />
+        <activity
+            android:name=".VideoRecorder"
+            android:exported="true" />
+        <activity
+            android:name=".QuizApp"
+            android:exported="true" />
+        <activity
+            android:name=".Calculator"
+            android:exported="true" />
+        <activity
+            android:name=".SpeechApp"
+            android:exported="true" />
+        <activity
+            android:name=".BrowserApp"
+            android:exported="true" />
+        <activity
+            android:name=".ChatApp"
+            android:exported="true" />
+        <activity
+            android:name=".CallApp"
+            android:exported="true" />
+        <activity
+            android:name=".MoreApp"
+            android:exported="true" />
+        <activity android:name=".User_Profile" />
+        <activity android:name=".UserInfo" />
+        <activity android:name=".FacebookLogin" />
+        <activity android:name=".GoogleSighIn" />
+        <activity android:name=".Home" />
+        <activity android:name=".EmailRegisteration" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

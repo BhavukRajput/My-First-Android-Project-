@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionThirdQuizApp">
+    <TextView
+        android:id="@+id/Slogan2QuizApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="THIRD QUESTION"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bungee"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/berkshire_swash"
+        android:gravity="center"
+        android:text="click on an option given below"
+        android:textColor="@color/av_red"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Slogan2QuizApp" />
+
+    <TextView
+        android:id="@+id/txtViewQuest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/aldrich"
+        android:gravity="center"
+        android:text="Ques-3 In which centuary did Portuguese merchants first land in Goa? "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewQuest2">
+
+        <RadioButton
+            android:id="@+id/btn_q3ans1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17th Centuary"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/btn_q3ans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15th Centuary"
+            android:textSize="17sp" />
+
+        <RadioButton
+            android:id="@+id/btn_q3ans3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16th Centuary"
+            android:textSize="17sp" />
+    </RadioGroup>
+    <Button
+        android:id="@+id/bttonNextQues3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        app:layout_constraintBottom_toTopOf="@+id/backFromquizApp3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3"/>
+
+    <Button
+        android:id="@+id/backFromquizApp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#000"
+        android:text="Back To Home Screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

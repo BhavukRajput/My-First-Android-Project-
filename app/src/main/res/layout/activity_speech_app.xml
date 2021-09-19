@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".SpeechApp">
+    <EditText
+        android:id="@+id/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:hint="Enter the text here"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/white"
+        style="@style/CardView.Light"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/speak_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:text="speach"/>
+    <Button
+        android:id="@+id/backfromTTSapp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="#000000"/>
+
+
+</LinearLayout>
